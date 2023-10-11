@@ -1,4 +1,4 @@
-# Simple Document Q&A App
+# Simple AI-Enabled Document Q&A App
 
 An intuitive AI-powered tool to extract and interact with textual data from PDF documents. Utilizing Langchain, OpenAI's Large Language Models, and Streamlit, this app is capable of reading, processing, and answering queries based on the content of uploaded PDF documents.
 
@@ -39,10 +39,9 @@ Feel free to open issues or provide pull requests to improve the app.
 
 ## Contact
 
-- 👨‍💻 Author: Yaksh Birla
+- 👨‍💻 Author: **Yaksh Birla**
 - 🔗 [LinkedIn](https://www.linkedin.com/in/yakshb/)
 - 📧 [Email](mailto:yb.codes@gmail.com)
-- 🌐 [Github Profile](https://github.com/yakshb)
 - ✍️ [Medium](https://medium.com/@yakshb)
 
 ## License

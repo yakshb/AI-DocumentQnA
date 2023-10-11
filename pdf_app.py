@@ -21,16 +21,19 @@ st.set_page_config(
     )
 
 # OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-OPENAI_API_KEY = st.sidebar.text_input("OpenAI API Key", type="password")
+OPENAI_API_KEY = st.sidebar.text_input("Enter Your OpenAI API Key:", type="password")
+st.sidebar.markdown("Get your OpenAI API key [here](https://platform.openai.com/account/api-keys)")
+st.sidebar.divider()
 llm_model_options = ['gpt-3.5-turbo', 'gpt-3.5-turbo-16k','gpt-4']  # Add more models if available
 model_select = st.sidebar.selectbox('Select LLM Model:', llm_model_options, index=0)
 st.sidebar.markdown("""\n""")
-temperature_input = st.sidebar.slider('Set AI Randomness / Determinism', min_value=0.0, max_value=1.0, value=0.5)
+temperature_input = st.sidebar.slider('Set AI Randomness / Determinism:', min_value=0.0, max_value=1.0, value=0.5)
 st.sidebar.markdown("""\n""")
 clear_history = st.sidebar.button("Clear conversation history")
 
 
 with st.sidebar:
+    st.divider()
     st.subheader("Considerations:", anchor=False)
     st.info(
         """
@@ -68,11 +71,12 @@ with st.sidebar:
 if "conversation" not in st.session_state:
     st.session_state.conversation = None
 
-st.markdown(f"""## AI-Assisted Report Analysis 📑 <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
+st.markdown(f"""## AI-Assisted Document Analysis 📑 <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
+st.write("_A tool built for AI-Powered Research Assistance or Querying Documents for Quick Information Retrieval_")
 
 with st.expander("❔How does the report analysis work?"):
     st.info("""
-    These processes are powered by robust and sophisticated technologies like OpenAI’s Large Language Models, Sentence Transformer, FAISS, and Streamlit, ensuring a reliable and user-friendly experience as users interact with Project ATLAS to gain insights from their documents.
+    These processes are powered by robust and sophisticated technologies like OpenAI’s Large Language Models, Sentence Transformer, FAISS, and Streamlit, ensuring a reliable and user-friendly experience for users to gain quick insights from their documents.
 
     1. **Document Upload and Processing**: The tool reads and extracts text from these documents, creating a foundational base of information. During this phase, the documents are also processed into manageable pieces to prepare them for subsequent analysis and querying.
     
