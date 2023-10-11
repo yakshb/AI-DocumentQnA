@@ -37,7 +37,7 @@ with st.sidebar:
     st.subheader("Considerations:", anchor=False)
     st.info(
         """
-        - Enable loading, indexing and retrieving CSV files and other tabular formats
+        - Currently only supports PDFs. Include support for .doc, .docx, .csv & .xls files 
 
         """)
 
