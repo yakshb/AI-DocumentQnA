@@ -38,7 +38,7 @@ Feel free to open issues or provide pull requests to improve the app.
 
 ## Contact
 
-- 👨‍💻 Author: **Yaksh Birla**
+👨‍💻 Author: **Yaksh Birla**
 - 🔗 [LinkedIn](https://www.linkedin.com/in/yakshb/)
 - 📧 [Email](mailto:yb.codes@gmail.com)
 - ✍️ [Medium](https://medium.com/@yakshb)
