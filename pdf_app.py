@@ -16,14 +16,18 @@ home_privacy = "We value and respect your privacy. To safeguard your personal de
 
 # Page configuration for Simple PDF App
 st.set_page_config(
-    page_title="Simple Document Q&A",
+    page_title="Document Q&A with AI",
+    page_icon="🧊",
     layout="wide",
+    initial_sidebar_state="expanded"
     )
 
 # OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+st.sidebar.subheader("Setup")
 OPENAI_API_KEY = st.sidebar.text_input("Enter Your OpenAI API Key:", type="password")
 st.sidebar.markdown("Get your OpenAI API key [here](https://platform.openai.com/account/api-keys)")
 st.sidebar.divider()
+st.sidebar.subheader("Model Selection")
 llm_model_options = ['gpt-3.5-turbo', 'gpt-3.5-turbo-16k','gpt-4']  # Add more models if available
 model_select = st.sidebar.selectbox('Select LLM Model:', llm_model_options, index=0)
 st.sidebar.markdown("""\n""")
