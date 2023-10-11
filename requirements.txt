@@ -1,0 +1,11 @@
+langchain
+streamlit
+pandas
+openai
+llama-index
+jinja2
+pypdf2
+html2text==2020.1.16
+tiktoken==0.4.0
+faiss-cpu==1.7.4
+sentence-transformers

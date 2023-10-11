@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#6D83F2"              # Lavender Blue
+backgroundColor="#FFFFFF"          # White
+secondaryBackgroundColor="#F7F7F9" # Light Gray
+textColor="#1E1E2F"                # Midnight Blue (for text on light background)
+font="sans serif"
