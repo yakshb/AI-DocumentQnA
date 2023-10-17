@@ -47,9 +47,11 @@ with st.sidebar:
 
     st.subheader("Updates Required:", anchor=False)
     st.warning("""
-        1. Use Langchain PDF loader and higher quality vector store for document parsing + reduce inefficient handling
+        1. Support for multiple PDFs.
         
-        2. Improve contextual question-answering by developing Prompt Templates - Tendency to hallucinate
+        2. Use Langchain PDF loader and higher quality vector store for document parsing + reduce inefficient handling.
+        
+        3. Improve contextual question-answering by developing Prompt Templates - Tendency to hallucinate.
     
         """
         )
